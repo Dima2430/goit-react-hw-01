@@ -1,7 +1,7 @@
-import Profile from './Profile/Profile';
-import './App.css'
-import FriendList from './Friends/Friends';
-import TransactionHistory from './Transaction/Transaction';
+import Profile from "./Profile/Profile";
+
+import FriendList from "./FriendList/FriendList";
+import TransactionHistory from "./Transaction/Transaction";
 const userData = {
   name: "Jacques Gluke",
   tag: "jgluke",
@@ -10,40 +10,40 @@ const userData = {
   stats: {
     followers: 5603,
     views: 4827,
-    likes: 1308
-  }
+    likes: 1308,
+  },
 };
 const friends = [
   {
     avatar: "https://cdn-icons-png.flaticon.com/512/1998/1998592.png",
     name: "Mango",
     isOnline: true,
-    id: 1812
+    id: 1812,
   },
   {
     avatar: "https://cdn-icons-png.flaticon.com/512/616/616438.png",
     name: "Kiwi",
     isOnline: false,
-    id: 1137
+    id: 1137,
   },
   {
     avatar: "https://cdn-icons-png.flaticon.com/512/1623/1623681.png",
     name: "Ajax",
     isOnline: true,
-    id: 1213
+    id: 1213,
   },
   {
     avatar: "https://cdn-icons-png.flaticon.com/512/2977/2977285.png",
     name: "Jay",
     isOnline: true,
-    id: 1714
+    id: 1714,
   },
   {
     avatar: "https://cdn-icons-png.flaticon.com/512/1998/1998749.png",
     name: "Poly",
     isOnline: false,
-    id: 1284
-  }
+    id: 1284,
+  },
 ];
 const transactions = [
   {
@@ -99,10 +99,8 @@ const transactions = [
     type: "invoice",
     amount: "14.79",
     currency: "PYG",
-  }
+  },
 ];
-
-
 
 const App = () => {
   return (
@@ -121,6 +119,3 @@ const App = () => {
 };
 
 export default App;
- 
-
-
